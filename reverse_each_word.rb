@@ -2,14 +2,10 @@ require 'pry'
 def reverse_each_word(words)
     array = words.split
     
-    new_sentence = ""
+    new_sentence = []
     array.collect do |word|
         word.reverse!
-        if word == array.last
-            new_sentence += "#{word}"
-        else
-            new_sentence += "#{word} "
-        end
+        new_sentence << word
     end
-    new_sentence
+    new_sentence.join(" ")
 end
