@@ -1,4 +1,4 @@
-sentence= ["Hello there, and how are you?"]
+sentence= []
 
 def reverse_each_word(sentence)
 reversed = sentence.split(" ").collect do |word|
